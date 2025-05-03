@@ -1,6 +1,6 @@
 # Simple Github Portfolio
 
-A simple website project that showcases your GitHub repositories, allowing you to fetch and display their READMEs. It uses the php-github-api client.
+A simple website that showcases your GitHub repositories, allowing you to fetch and display their READMEs. It uses the php-github-api client.
 
 Demo: [https://lode.uno/portfolio/](https://lode.uno/portfolio/)
 
