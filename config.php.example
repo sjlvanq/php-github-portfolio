@@ -1,0 +1,18 @@
+<?php
+
+define('CONFIG', [
+'SITE' => [
+  'TITLE' => 'GitHub Portfolio',
+  'SUBTITLE' => '/YOUR-USER',
+  'PATH' => 'portfolio'],
+'GH' => [
+  'USER' => 'YOUR-USER',
+  'REPOS' => [
+    'SORT' => 'updated',
+    'DIRECTION' => 'desc',
+    'EXCLUDED' => [
+      'YOUR-USER.github.io',
+      'OTHER-EXCLUDED-REPO'
+    ]]
+  ]
+]);
