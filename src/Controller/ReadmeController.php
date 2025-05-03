@@ -11,7 +11,13 @@ class ReadmeController {
     public static function show(string $repo) {
         $client = new Client();
         $owner = CONFIG['GH']['USER'] ?? 'GitHub';
-        
+        $repo = preg_replace('/[\x00-\x1F\x7F]/u', '', $repo);
+        if (!preg_match('/^[a-zA-Z0-9._-]+$/', $repo)) {
+            error_log("ReadmeController: repo parameter");
+            http_response_code(500);
+            echo "Error desconocido.";
+            return;
+        }
         try {
             $readme = $client->api('repo')->contents()->show($owner, $repo, 'README.md');
             $decoded = base64_decode($readme['content']);
