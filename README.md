@@ -1,4 +1,4 @@
-#Github Portfolio 
+# Simple Github Portfolio
 
 A simple website project that showcases your GitHub repositories, allowing you to fetch and display their READMEs. It uses the php-github-api client and Tailwind CSS.
 
