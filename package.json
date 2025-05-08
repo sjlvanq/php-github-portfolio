@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "tailwindcss -i ./src/assets/styles.css -o ./public/css/styles.css --watch"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.5",
+    "tailwindcss": "^4.1.5"
+  }
+}

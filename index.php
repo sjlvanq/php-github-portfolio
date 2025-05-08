@@ -16,11 +16,10 @@ $repos = GitHubClient::getUserRepos();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo CONFIG['SITE']['TITLE']; ?></title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="<?php echo CONFIG['SITE']['PATH']; ?>/public/css/styles.css">
   <script src="<?php echo CONFIG['SITE']['PATH']; ?>/public/js/get_readme.js"></script>
 </head>
-<body class="bg-gray-100 text-gray-900 bg-[url(<?php echo CONFIG['SITE']['PATH']; ?>/public/background.jpg)] bg-fixed bg-cover">
+<body class="bg-gray-100 text-gray-900 bg-fixed bg-cover" style="background-image: url('<?php echo CONFIG['SITE']['PATH']; ?>/public/background.jpg')">
   <div class="mx-auto px-4 py-8 container">
     <h1 class="drop-shadow-sm mb-1 font-extrabold text-gray-800 text-4xl md:text-5xl text-center tracking-tight">
 		<?php echo CONFIG['SITE']['TITLE'] ?? 'TITLE'?>

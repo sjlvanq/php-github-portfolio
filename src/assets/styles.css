@@ -1,0 +1,7 @@
+@config "../../tailwind.config.js";
+@import "tailwindcss";
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
