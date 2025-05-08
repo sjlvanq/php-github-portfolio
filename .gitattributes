@@ -1,0 +1,4 @@
+# Evitar que css sea detectado como lenguaje dominante en el repositorio
+*.css linguist-detectable=false
+*.php linguist-detectable=true
+
